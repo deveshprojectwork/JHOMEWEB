@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>objectdata</title>
+</head>
+<body>
+    <h1 id="n1">kjkj</h1>
+
+    <h1 id="n2"></h1>
+    <script>
+        var person={ //this is object
+            firstName:"jyoti",
+            lastName:"srivastava",
+            Id:32,
+            fullName:function()
+            {
+                return this.firstName+" "+ this.lastName;   
+            }
+        };
+        var car={
+                    carname:"hondacity",
+                    carmodel:"xya",
+                    carnameWithmodel:function()
+                       {
+                        return this.carname+ this.carmodel;
+                       }    
+                 } ; 
+               
+             document.getElementById("n2").innerHTML= "Full Name is" +"" +person.fullName() ;  
+             document.getElementById("n1") .innerHTML="Carname is "+car.carnameWithmodel();
+            //   document.getElementById("n1").innerHTML= "Full Name is";
+    </script> 
+</body>
+</html>
+
+

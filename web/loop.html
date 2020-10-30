@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>loop</title>
+
+</head>
+<body>
+    Number a:<input id="num1"type="number"/><br>
+    Number b:<input id="num2"type="number"/><br>
+    Number c:<input id="num3"type="number"/>
+
+    <button id="btn" onClick="showme()">click here </button>
+    <p id="para"></p>
+
+    <script>
+        function showme(){
+            console.log("testing");
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+
+            if(a>0)
+            {
+                console.log("a>0", a);
+                var result = parseInt(b)+parseInt(c);
+                document.getElementById("para").innerHTML =  result;
+            }
+            else if(a<0)
+            {
+                console.log("a<0", a);
+                var result = parseInt(b)-parseInt(c);
+                document.getElementById("para").innerHTML =  result;
+            }
+        }
+    </script>
+</body>
+</html>

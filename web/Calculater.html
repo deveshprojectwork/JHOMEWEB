@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculater</title>
+    <script>
+        // alert("ssdsd")
+        
+        function cal()
+        {
+            var number1 = document.getElementById("n1").value;
+            var number2 = document.getElementById("n2").value;
+            var add = parseInt(number1) + parseInt(number2)
+            alert(add)
+            console.log(add)
+            document.getElementById("output").innerHTML = add;
+        }
+
+        function sub()
+        {
+            var number1 = document.getElementById("n1").value;
+            var number2 = document.getElementById("n2").value;
+            var add = number1 -number2
+            alert(add)
+            console.log(add)
+            document.getElementById("output").innerHTML = add;
+        }
+
+        function mul()
+        {
+            var number1 = document.getElementById("n1").value;
+            var number2 = document.getElementById("n2").value;
+            var add = number1 *number2
+            alert(add)
+            console.log(add)
+            document.getElementById("output").innerHTML = add;
+        }
+
+        function div()
+        {
+            var number1 = document.getElementById("n1").value;
+            var number2 = document.getElementById("n2").value;
+            var add = number1 /number2
+            alert(add)
+            console.log(add)
+            document.getElementById("output").innerHTML = add;
+        }
+
+    </script>
+</head>
+<body>
+    Number1 <input id="n1" type="text" /><br>
+    Number2 <input id="n2" type="text" /><br>
+
+    <input  type="submit" value="Add" onclick="cal()" ></input>
+    <input  type="submit" value="sub" onclick="sub()" ></input>
+    <input  type="submit" value="mul" onclick="mul()" ></input>
+    <input  type="submit" value="divide" onclick="div()" ></input><br>
+ 
+    The output is :<h1 id="output"> </h1>
+</body>
+</html>

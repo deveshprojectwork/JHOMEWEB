@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Marksheet</title>
+</head>
+<body>
+    <h1>Children's Marksheet Data</h1>
+    Name of student:<br><input id="box1"><br><br>
+    Persentage of marks:<br><input id= "box2"><br />
+
+    <h3 id="show"></h3>
+
+    <input type="submit" onclick="foo()"></input>
+
+    <script>
+        function foo(){
+            var name = document.getElementById("box1").value;
+            var marks = document.getElementById("box2").value;
+            if(marks>90){
+                marks = "Congrates you got A++ marks"
+            } 
+            else if (marks>60 && marks<90)
+            {
+                marks = "Congrates you got B++ "
+            }
+            else if (marks>40 && marks<60)
+            {
+                marks = "Congrates you got c++ "
+            }
+            else
+            {
+                marks =" soorry,you are failed"
+            }
+            
+            document.getElementById("show").innerHTML = name + marks
+        }
+
+    </script>
+
+
+</body>
+</html>

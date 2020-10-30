@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>oddeven</title>
+</head>
+<body>
+    <input type="text" id="box"/>
+    <button id="btn" onclick="showEvenOdd()">click here </button>
+    <p id="para"></p>
+    <script>
+
+        function showEvenOdd(){
+            var evenodd = document.getElementById("box").value;
+            if(evenodd % 2 == 0)
+            {
+                console.log("Number is even",evenodd);
+            }else
+               {
+                console.log("Number is odd",evenodd);
+            }
+        }
+
+            //let arr = [40,3,13,35];
+
+            let arr = ["Devesh","Elsisha","Parth","Jyoti"];
+            console.log("lenght of array is ",arr.length)
+        
+            for(let i=0; i<10;i++)
+            {
+               // console.log(i);
+               // console.log(arr[i]);
+               if(i%2==0)
+               {
+                console.log("NUmber is even",i);
+               }else
+               {
+                console.log("NUmber is odd",i);
+               }
+            }
+
+            
+
+    </script>
+
+    
+</body>
+</html>

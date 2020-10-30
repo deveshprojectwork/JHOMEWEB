@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Array type</title>
+</head>
+<body>
+    <input id="box"type="text"> <br>
+    text is here:<p id="para"></p>
+    <button id="btn">click here</button>
+    <p id=para1></p>
+    <p id=para2></p>
+    <button id="btnpop">pop</button>
+    <button id="btnpush">push</button>
+    <button id="btnshift">shift</button>
+    <button id="btnunshift">unshift</button>
+    <button id="btnslice">slice</button>
+    <button id="btnsplice">splice</button>
+    <button id="btnconcat">concst</button>
+    <button id="btnassending">sort</button>
+    <button id="btndesending">desending</button>
+
+
+
+    <script>
+        document.getElementById("btn").onclick=
+        function()
+        {   
+            var text="";
+            text =document.getElementById("box").value;
+            document.getElementById("para1").innerHTML=text;
+        }
+
+        var fruits = ["Apple","Banana","Mango","Orange","Grapes"]  
+        document.getElementById("para1").innerHTML = fruits;
+
+        document.getElementById("btnpop").onclick=
+        function()
+        {
+            var obj = fruits.pop();
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+
+        document.getElementById("btnpush").onclick=
+        function()
+        {
+            var obj = fruits.push("Kewi");
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+        document.getElementById("btnshift").onclick=
+        function()
+        {
+            var obj = fruits.shift("Kewi");
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+        document.getElementById("btnunshift").onclick=
+        function()
+        {
+            var obj = fruits.unshift("date");
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+        document.getElementById("btnslice").onclick=
+        function()
+        {
+            var obj = fruits.slice();
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+        document.getElementById("btnsplice").onclick=
+        function()
+        {
+            var obj = fruits.splice(1,3,);
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+
+        document.getElementById("btnconcat").onclick=
+        function()
+        {
+            var veg = ["tamatp","onion","peas"];
+            var obj = fruits.concat(veg);
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+        document.getElementById("btnassending").onclick=
+        function()
+        {
+            var obj = fruits.assending();
+            document.getElementById("para1").innerHTML = obj;
+            document.getElementById("para2").innerHTML = fruits;
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

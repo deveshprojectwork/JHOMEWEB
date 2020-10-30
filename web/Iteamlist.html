@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>list</title>
+    <style>
+        table {
+            border-collapse:collapse;
+        }
+        /* table,td,th{
+            border:2px green solid;
+            padding: 1em;
+            margin: 5em;
+        } */
+
+        table{
+            border:2px green solid;
+            padding: 1em;
+            margin: 5em;
+        }
+
+        table , th{
+            border:2px green solid;
+            padding: 1em;
+            margin: 5em;
+        }
+
+        .th{
+            border:2px green solid;
+            padding: 1em;
+            margin: 5em;
+        }
+
+        .bb {
+            border-right: 1px solid;
+        }
+         
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">Title</th>
+        </tr>
+        <tr class="th">
+            <td colspan="2" class="bb">subtitle</td>
+            <td colspan="2">Subtitle</td>
+        </tr>
+        <tr >
+            <td class="bb" >1 item </td>
+            <td class="bb">123</td>
+            <td class="bb">1 item</td>
+            <td class="bb">123</td>
+        </tr>
+        <tr>
+            <td class="bb">1 item</td>
+            <td class="bb">123</td>
+            <td class="bb">1 item</td>
+            <td class="bb">123</td>
+        </tr>
+        <tr>
+            <td class="bb">1 item</td>
+            <td class="bb">123</td>
+            <td class="bb">1 item</td>
+            <td>123</td>
+        </tr>
+        <tr class="th">
+            <td colspan="2" class="bb"> sub Subtitle</td>
+            <td colspan="2">sub Subtitle</td>
+        </tr>
+
+
+    </table>
+</body>
+</html>

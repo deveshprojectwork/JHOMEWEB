@@ -1,0 +1,44 @@
+<html>
+	<head><title>html layout</title>
+	</head>
+	<body>
+	<h1>Responding a click</h1>
+	<h2>C++</h2>
+	<p id="para"></p>
+	
+    <button id="btnshow">click</button>
+	<button id="btnclear">clear para</button>
+	
+	<h1 id=para2>Defination of C++</h1>
+    <button id="btnappend">Append</button>
+  
+	
+	<script type="text/javascript">
+		document.getElementById("btnshow").onclick=
+        function()
+		{
+			document.getElementById("para").innerHTML="C++ (/ˌsiːˌplʌsˈplʌs/) is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or . ... The current C++17 standard supersedes these with new features and an enlarged standard library.";
+		}
+
+
+        document.getElementById("btnclear").onclick=
+        function()
+		{
+			
+			document.getElementById("para").innerHTML="";
+		}
+
+        document.getElementById("btnappend").onclick=
+		function()
+		{
+			document.getElementById("para").innerHTML= document.getElementById("para").innerHTML + document.getElementById("para2").innerHTML;
+			document.getElementById("para2").hidden =true;
+
+
+		}
+
+	
+	</script>
+	
+	</body>
+</html>

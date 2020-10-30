@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Favourite color</title>
+</head>
+<body>
+    <h1>chosse no (1to9)</h1>
+    <input id="txtcolor" type="text" />
+    <button id="btn">SHOW COLOR</button>
+    <p id="col"></p>
+
+    <script>
+        document.getElementById("btn").onclick=
+        function(){
+                //alert("GO")
+                var color = document.getElementById("txtcolor").value;
+                //console.log(color)
+                // switch (color) {
+                //     case "RED":
+                //         document.getElementById("col").innerHTML=color;
+                //         //console.log("RED")
+                //         //alert("RED")
+                //         break;
+                //     case "BLUE":
+                //         console.log("BLUE")
+                //         break;
+                //     case "GREEN":
+                //         console.log("GREEN")
+                //         break;
+                //     default:
+                //         console.log("there is no color")                    
+                //         break;
+                // }
+
+
+                var color = document.getElementById("txtcolor").value;
+                switch (color) {
+                    case "1":
+                        document.getElementById("col").innerHTML="RED";
+                        //console.log("RED")
+                        //alert("RED")
+                        break;
+                    case "2":
+                         document.getElementById("col").innerHTML="GREEN";
+                         // console.log("GREEN")
+                        break;
+                    case "3":
+                        document.getElementById("col").innerHTML="ORANGE";
+                         //console.log("ORANGE")
+                        break;
+
+                     case"4":
+                        document.getElementById("col").innerHTML="BLACK";
+                         //console.log("BLACK")
+                        break;
+
+                    case"5":
+                        document.getElementById("col").innerHTML="PINK";
+                         //console.log("PINK")
+                        break;
+
+                    case"6":
+                        document.getElementById("col").innerHTML="YELLOW";
+                         //console.log("YELLOW")
+                        break;
+
+                    case"7":
+                        document.getElementById("col").innerHTML="PURPEL";
+                        // console.log("GREEN")
+                        break;
+
+                    case"8":
+                        document.getElementById("col").innerHTML="BROWN";
+                        // console.log("BROWN")
+                        break;
+
+                    case"9":
+                        document.getElementById("col").innerHTML="WHITE";
+                         //console.log("WHITE")
+                        break;
+
+       
+                    
+                     default:
+                       document.getElementById ("col").innerHTML="there is no color" 
+                        //console.log("there is no color")                    
+                        break;
+                }
+        }
+    </script>
+
+</body>
+</html>

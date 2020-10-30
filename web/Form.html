@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+     <title><colourchange</title>
+</head>
+<body>
+
+
+
+    <h1>Login Form</h1>
+    User Name <input type="text" id="txtuname" ></input><br/>
+    Password <input type="text" id="txtpwd" ></input>
+    <button type="submit" id="txtbtn">submit</button>
+
+    <p id="para"></p>
+    
+    <p id="sum"></p>
+  
+    <script type="text/javascript">
+
+    document.getElementById("txtbtn").onclick=  
+    function ()                          
+    {
+        // alert("green")
+
+        //variable are used to store data and they are changeable
+
+        var age = 55; //integer
+        var name = "Jyoti" //string
+        var isOld = false; //boolean
+        var numdollor = 50.55 //float/double
+
+        var num1 = 40;
+        var num2 = 60;
+        var sum = num1 + num2;
+        var sub = num1 - num2;
+        var mul = num1 * num2;
+
+        document.getElementById("sum").innerHTML = "the sum is: " + sum + " " +"the substration is:" + sub+" "+ "the multiplicatino is:" + mul;
+        
+        var uname = document.getElementById("txtuname").value ;
+        var upwd = document.getElementById("txtpwd").value ;
+
+        console.log("user name is " + uname); //only seen on the cosole
+        console.log("password is " + upwd); //only seen on the cosole
+        document.getElementById("para").innerHTML = uname + "::" + upwd; //seen on the para
+
+    }
+    </script>
+
+
+</body>
+</html>
